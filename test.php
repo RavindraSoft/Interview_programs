@@ -1,12 +1,6 @@
 <?php
 
-$x = "Learn";
-$$x= "Solo";
+$x = "5 nitesh";
+$y= "6 yogesh";
 
-
-echo $Learn;
-die;
-
-//$Learn .= $x;
-
-//echo $Learn;
+echo $x+$y;

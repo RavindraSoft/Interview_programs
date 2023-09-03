@@ -15,7 +15,7 @@ echo "<br>";
 for($i=0; $i<$n-1; $i++){
     for($j=0; $j<$n-1; $j++){
 //        echo $i." ".$j." - ".implode(",",$arr)."<br>";
-        if($arr[$j] > $arr[$j+1]){
+        if($arr[$j] < $arr[$j+1]){
             $temp = $arr[$j];
             $arr[$j]=$arr[$j+1];
             $arr[$j+1]=$temp;

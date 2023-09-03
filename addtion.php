@@ -65,7 +65,8 @@ function add($number1, $number2){
         $rem = $sum % 10;
         $resultSum = $rem.$resultSum;
     }
-    if($carry>0)    $resultSum = $carry.$resultSum;
+    if($carry>0)    
+        $resultSum = $carry.$resultSum;
     
     return $resultSum;
 }
