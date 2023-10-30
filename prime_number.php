@@ -21,7 +21,7 @@ $arrPrime = [];
 //     }
 // }
 
-for($i=2; $i<=$n; $i++){
+for($i=2; $i<=20; $i++){
 
     $primeNum = 1;
     for($j=2; $j<$i; $j++){

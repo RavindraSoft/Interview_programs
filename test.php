@@ -1,6 +1,41 @@
 <?php
 
+const name = "nitesh";
 
+echo name;
+
+
+
+die;
+
+
+
+// echo "<pre>";
+
+// // JSON data
+// $json = '{"name": "John", "age": 30, "city": "New York"}';
+
+// // Convert JSON to stdClass object
+// $obj = json_decode($json,1);
+
+// echo "var dump - ";
+// var_dump($obj); 
+
+// echo "<br>";
+
+// echo "print r - ";
+// print_r($obj);
+
+// echo "<br>";
+
+// // Access properties
+// echo $obj->name; // Outputs 'John'
+// echo $obj->age;  // Outputs 30
+// echo $obj->city; // Outputs 'New York'
+
+die;
+
+// ===================================================================================
 $text = "Hello, world!";
 $replacements = [
     '/Hello/' => function ($matches) {
