@@ -1,21 +1,25 @@
 <?php
 
-class Queue {
+class Queue
+{
 
     private $item = [];
 
-    public function enqueue($data){
+    public function enqueue($data)
+    {
         array_push($this->item, $data);
     }
 
-    public function dequeue(){
-        if(!$this->isEmpty()){
+    public function dequeue()
+    {
+        if (!$this->isEmpty()) {
             return array_shift($this->item);
         }
         return 'Empty Queue';
     }
 
-    public function isEmpty(){
+    public function isEmpty()
+    {
         return empty($this->item);
     }
 }

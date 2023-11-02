@@ -1,11 +1,13 @@
 <?php
 
-class Node {
+class Node
+{
     public $data;
     public $next;
     public $prev;
 
-    public function __construct($data){
+    public function __construct($data)
+    {
         $this->data = $data;
         $this->next = null;
         $this->prev = null;
@@ -13,20 +15,24 @@ class Node {
 }
 
 
-class DoublyLinkedList {
+class DoublyLinkedList
+{
     public $head;
     public $tail;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->head = null;
         $this->tail = null;
     }
 
-    public function isEmpty(){
+    public function isEmpty()
+    {
         return $this->head == null;
     }
 
-    public function insert($data) {
+    public function insert($data)
+    {
         $newNode = new Node($data);
         if ($this->isEmpty()) {
             $this->head = $newNode;
@@ -39,7 +45,8 @@ class DoublyLinkedList {
     }
 
 
-    public function displayForward() {
+    public function displayForward()
+    {
         $current = $this->head;
         while ($current != null) {
             echo $current->data . ' ';
@@ -49,10 +56,11 @@ class DoublyLinkedList {
     }
 
 
-    public function displayBackward(){
+    public function displayBackward()
+    {
         $current = $this->tail;
-        while($current != null){
-            echo $current->data. ' ';
+        while ($current != null) {
+            echo $current->data . ' ';
             $current = $current->prev;
         }
         echo PHP_EOL;
@@ -68,7 +76,7 @@ $dll->insert('Ravindra');
 echo "Forward: ";
 $dll->displayForward(); // Output: Forward: 1 2 3
 
-echo "<br>";
+echo "\n";
 
 echo "Backward: ";
 $dll->displayBackward(); // Output: Backward: 3 2 1 

@@ -1,6 +1,7 @@
 <?php
 
-class class1 {
+class class1
+{
    public $name = "nitesh";
 }
 

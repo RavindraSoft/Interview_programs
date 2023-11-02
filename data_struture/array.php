@@ -1,7 +1,7 @@
 <?php
 
 // Creating an array
-$array = [1, 2, 3, 4, 5];
+                    $array = [1, 2, 3, 4, 5];
 
 // Accessing elements
 echo $array[0]; // Output: 1

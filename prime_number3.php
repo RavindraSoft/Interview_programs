@@ -3,11 +3,12 @@
 $start = 1;
 $end = 20;
 
-  $primeCount = countPrimesInRange($start, $end);
+$primeCount = countPrimesInRange($start, $end);
 
-  echo $primeCount;
-  
-  function isPrime($number) {
+echo $primeCount;
+
+function isPrime($number)
+{
     if ($number <= 1) {
         return false;
     }
@@ -30,17 +31,18 @@ $end = 20;
     return true;
 }
 
-function countPrimesInRange($start, $end) {
+function countPrimesInRange($start, $end)
+{
     $count = 0;
 
-    if($start == 1){
-        $start=2;
+    if ($start == 1) {
+        $start = 2;
     }
     // Iterate through odd numbers in the given range
     for ($num = $start; $num <= $end; $num++) {
         if (isPrime($num)) {
 
-            echo $num.'-'.$count.' ';
+            echo $num . '-' . $count . ' ';
             echo "<br>";
 
             $count++;

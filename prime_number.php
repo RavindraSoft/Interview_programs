@@ -2,7 +2,7 @@
 
 $n = 200;
 
-$totalPrimeNumbers =0;
+$totalPrimeNumbers = 0;
 $arrPrime = [];
 
 // for($i=2; $i<=$n; $i++){
@@ -21,16 +21,16 @@ $arrPrime = [];
 //     }
 // }
 
-for($i=2; $i<=20; $i++){
+for ($i = 2; $i <= 20; $i++) {
 
     $primeNum = 1;
-    for($j=2; $j<$i; $j++){
-        if($i%$j == 0){
+    for ($j = 2; $j < $i; $j++) {
+        if ($i % $j == 0) {
             $primeNum = 0;
         }
     }
 
-    if($primeNum == 1){
+    if ($primeNum == 1) {
         echo " $i is prime number <br>";
         $arrPrime[] = $i;
         $totalPrimeNumbers++;
@@ -39,6 +39,6 @@ for($i=2; $i<=20; $i++){
 
 
 
-echo implode(", ",$arrPrime);
+echo implode(", ", $arrPrime);
 
-echo "<br><br> Total Prime Numbers - ". $totalPrimeNumbers;
+echo "<br><br> Total Prime Numbers - " . $totalPrimeNumbers;
